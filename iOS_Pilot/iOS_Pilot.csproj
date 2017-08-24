@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="iMobileDevice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=040ae19651fac98a, processorArchitecture=MSIL">
-      <HintPath>..\packages\imobiledevice-net.1.2.0.112\lib\net40\iMobileDevice.dll</HintPath>
+    <Reference Include="iMobileDevice-net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=040ae19651fac98a, processorArchitecture=MSIL">
+      <HintPath>..\packages\iMobileDevice-net.1.2.1-r196\lib\net45\iMobileDevice-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,11 +85,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\imobiledevice-net.1.2.0.112\build\net40\imobiledevice-net.targets" Condition="Exists('..\packages\imobiledevice-net.1.2.0.112\build\net40\imobiledevice-net.targets')" />
+  <Import Project="..\packages\iMobileDevice-net.1.2.1-r196\build\net45\iMobileDevice-net.targets" Condition="Exists('..\packages\iMobileDevice-net.1.2.1-r196\build\net45\iMobileDevice-net.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\imobiledevice-net.1.2.0.112\build\net40\imobiledevice-net.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\imobiledevice-net.1.2.0.112\build\net40\imobiledevice-net.targets'))" />
+    <Error Condition="!Exists('..\packages\iMobileDevice-net.1.2.1-r196\build\net45\iMobileDevice-net.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\iMobileDevice-net.1.2.1-r196\build\net45\iMobileDevice-net.targets'))" />
   </Target>
 </Project>
